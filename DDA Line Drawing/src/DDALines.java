@@ -1,15 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-//package opengl;
-
 import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 import java.util.stream.DoubleStream;
@@ -19,10 +7,6 @@ import javax.media.opengl.GLAutoDrawable;
 import javax.media.opengl.GLEventListener;
 import javax.media.opengl.glu.GLU;
 
-/**
- *
- * @author sbiswas.amit
- */
 public class DDALines implements GLEventListener {
     /**
      * Interface to the GLU library.
@@ -63,13 +47,8 @@ public class DDALines implements GLEventListener {
         DDA(gl,70, 50, 70, 10);
         DDA(gl,130, 50, 130, 10);
         
-        DDA(gl,70, 10, 130, 10);
-        
- 
-     
+        DDA(gl,70, 10, 130, 10); 
     }
-    
- 
 
     @Override
     public void reshape(GLAutoDrawable drawable, int x, int y, int width, int height) {
@@ -85,9 +64,7 @@ public class DDALines implements GLEventListener {
         gl.glColor3d(1, 0, 0);
         gl.glBegin(GL2.GL_POINTS);
         
-      
-        
-   
+
     	double x = x1;
     	double y = y1;
     	int dx = Math.abs(x2 - x1);
